@@ -180,8 +180,34 @@ class Web extends Controller
     /**
      * LOGIN PAGE
      */
-    public function login()
+    public function login(?array $data): void
     {
+        if (!empty($data['csrf'])) {
+            if (!csrf_verify($data)) {
+                $json['message'] = $this->message->error("Erro ao enviar o formulário, tente novamente")->render();
+                echo json_encode($json);
+                return;
+            }
+            if(empty($data['email']) || empty($data['password'])){
+                $json['message'] = $this->message->warning("Informe um email e senha para entrar :)");
+                echo json_encode($json);
+                return;
+            }
+
+            $save = (!empty($data['save']) ? true : false);
+            $auth = new Auth();
+            $login = $auth->login($data['email'], $data['password'], $save);
+
+            if($login){
+                $json['redirect'] = url("/app");
+            }else{
+                $json['message'] = $auth->message()->render();
+            }
+            echo json_encode($json);
+            return;
+
+        }
+
         $head = $this->seo->render(
             "Entrar - " . CONF_SITE_NAME . CONF_SITE_TITLE,
             CONF_SITE_DESC,
@@ -190,7 +216,8 @@ class Web extends Controller
         );
 
         echo $this->view->render("auth-login", [
-            "head" => $head
+            "head" => $head,
+            "cookie"=> filter_input(INPUT_COOKIE, "authEmail")
         ]);
     }
 
@@ -271,24 +298,44 @@ class Web extends Controller
             url("/confirmar"),
             theme("/assets/image/share.jpg")
         );
-        echo $this->view->render("optin-confirm", [
-            "head" => $head
+        echo $this->view->render("optin", [
+            "head" => $head,
+            "data" => (object)[
+                "title" => "Falta pouco! Confirme seu cadastro.",
+                "desc" => "Enviamos um link de confirmação para seu e-mail. Acesse e siga as instruções para concluir seu cadastro e comece a gerenciarseu pedidos com CaféFood",
+                "image" => theme("/assets/images/optin-confirm.jpg")
+            ]
         ]);
     }
 
     /**
      * SUCCESS REGISTER
      */
-    public function success()
+    public function success(array $data): void
     {
+        $email = base64_decode($data['email']);
+        $user = (new User())->findByEmail($email);
+
+        if ($user && $user->status != "confirmed") {
+            $user->status = "confirmed";
+            $user->save();
+        }
+
         $head = $this->seo->render(
             "Sucesso - " . CONF_SITE_NAME . CONF_SITE_TITLE,
             CONF_SITE_DESC,
             url("/sucesso"),
             theme("/assets/image/share.jpg")
         );
-        echo $this->view->render("optin-success", [
-            "head" => $head
+        echo $this->view->render("optin", [
+            "head" => $head,
+            "data" => (object)[
+                "title" => "Tudo pronto. Você já pode gerenciar seus Pedidos :)",
+                "desc" => "Bem-vindo(a) ao seu controle de pedidos, vamos tomar um café?",
+                "image" => theme("/assets/images/optin-success.jpg"),
+                "link" => url("/entrar"),
+                "link_title" => "fazer login"
+            ]
         ]);
     }
 
