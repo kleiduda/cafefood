@@ -31,18 +31,37 @@ $route->get("/entrar", "Web:login");
 $route->post("/entrar", "Web:login");
 $route->get("/cadastrar", "Web:register");
 $route->post("/cadastrar", "Web:register");
+
 $route->get("/recuperar", "Web:forget");
+$route->post("/recuperar", "Web:forget");
+$route->get("/recuperar/{code}", "Web:reset");
+$route->post("/recuperar/resetar", "Web:reset");
+
 
 //optin
 $route->get("/confirma", "Web:confirm");
 $route->get("/obrigado/{email}", "Web:success");
 
 
+
+/**
+ * APP ADM
+ */
+$route->group("/app");
+$route->get("/", "App:home");
+$route->get("/receber", "App:income");
+$route->get("/pagar", "App:expense");
+$route->get("/fatura/{invoice_id}", "App:invoice");
+
+$route->get("/cardapio", "App:cardapio");
+$route->get("/usuarios","App:users");
+
+$route->get("/perfil", "App:profile");
+$route->get("/sair", "App:logout");
+
 //services
 $route->get("/termo", "Web:terms");
-$route->group("app");
-$route->get("/", "App:home");
-$route->get("/sair", "App:logout");
+
 
 /**
  * ERROR ROUTE

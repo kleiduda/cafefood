@@ -56,21 +56,13 @@ define("CONF_PASSWD_MAX_LEN", 40);
 define("CONF_PASSWD_ALGO", PASSWORD_DEFAULT);
 define("CONF_PASSWD_OPTION", ["cost" => 10]);
 
-/**
- * MESSAGE
- */
-define("CONF_MESSAGE_CLASS", "message");
-define("CONF_MESSAGE_INFO", "info icon-info");
-define("CONF_MESSAGE_SUCCESS", "success icon-check-square-o");
-define("CONF_MESSAGE_WARNING", "warning icon-warning");
-define("CONF_MESSAGE_ERROR", "error icon-warning");
 
 /**
  * VIEW
  */
 define("CONF_VIEW_PATH", __DIR__ . "/../../shared/views");
 define("CONF_VIEW_THEME", "cafe");
-define("CONF_VIEW_APP", "cafeapp");
+define("CONF_VIEW_APP", "cafecustomer");
 define("CONF_VIEW_EXT", "php");
 
 /**
@@ -94,8 +86,8 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 define("CONF_MAIL_HOST", "smtp.sendgrid.net");
 define("CONF_MAIL_PORT", "587");
 define("CONF_MAIL_USER", "apikey");
-define("CONF_MAIL_PASS", "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");
-define("CONF_MAIL_SENDER", ["name" => "Kleiton Freitas", "address" => "kleiduda@gmail.com"]);
+define("CONF_MAIL_PASS", "");
+define("CONF_MAIL_SENDER", ["name" => "Kleiton Freitas", "address" => ""]);
 define("CONF_MAIL_SUPPORT","kleiduda@gmail.com");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);

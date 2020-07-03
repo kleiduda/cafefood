@@ -40,10 +40,10 @@ class Email
         $this->mail->CharSet = CONF_MAIL_OPTION_CHARSET;
 
         //auth
-        $this->mail->Host = "smtp.sendgrid.net";
-        $this->mail->Port = 587;
-        $this->mail->Username = "apikey";
-        $this->mail->Password = "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";
+        $this->mail->Host = CONF_MAIL_HOST;
+        $this->mail->Port = CONF_MAIL_PORT;
+        $this->mail->Username = CONF_MAIL_USER;
+        $this->mail->Password = CONF_MAIL_PASS;
     }
 
     /**

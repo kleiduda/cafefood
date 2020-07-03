@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a2dc63b-b722-402a-bb37-e000e177ebc9" name="Default Changelist" comment="autenticao de usuario">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/boot.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/boot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Boot/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Boot/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Boot/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Minify/Web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafe/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafe/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafe/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafe/auth-forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/auth-forget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="6ac58fd9-8cb1-4674-b5e4-e64f78c35d08" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
+      <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1e0x3ERy6Z6ozGoPuePwMq63dDF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/cafecustomer" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\views" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\assets" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\assets\css" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\shared\scripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\views" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\assets\css" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\themes\cafecustomer\_template" />
+      <recent name="M:\WEB\xampp\htdocs\cafe\shared\scripts" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a2dc63b-b722-402a-bb37-e000e177ebc9" name="Default Changelist" comment="" />
+      <created>1593472110445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593472110445</updated>
+      <workItem from="1593472111827" duration="6033000" />
+      <workItem from="1593536582337" duration="12769000" />
+      <workItem from="1593549846550" duration="33876000" />
+      <workItem from="1593618557691" duration="3764000" />
+      <workItem from="1593623160145" duration="15779000" />
+      <workItem from="1593713529570" duration="9462000" />
+      <workItem from="1593726566947" duration="29964000" />
+      <workItem from="1593795648366" duration="3563000" />
+      <workItem from="1593814999474" duration="1260000" />
+    </task>
+    <task id="LOCAL-00001" summary="autenticao de usuario">
+      <created>1593733083631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593733083631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="autenticao de usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="autenticao de usuario" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593575592375">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1593575592375" />
+    <state x="550" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593568804003">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="550" y="233" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1593568804003" />
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1593758059811">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1593758059811" />
+    <state x="530" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593764506679">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="530" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1474.864@62.0.1474.864" timestamp="1593764506679" />
+    <state x="530" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593582508261">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="530" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864@62.0.1474.864" timestamp="1593582508261" />
+    <state x="570" y="313" width="458" height="267" key="ComposerInitDialogKey" timestamp="1593472255146">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="570" y="313" width="458" height="267" key="ComposerInitDialogKey/62.0.1474.864@62.0.1474.864" timestamp="1593472255146" />
+    <state x="580" y="187" key="FileChooserDialogImpl" timestamp="1593641442572">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="580" y="187" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1593641442572" />
+    <state width="1209" height="223" key="GridCell.Tab.0.bottom" timestamp="1593760770509">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1209" height="223" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
+    <state width="1209" height="223" key="GridCell.Tab.0.center" timestamp="1593760770509">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1209" height="223" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
+    <state width="1209" height="223" key="GridCell.Tab.0.left" timestamp="1593760770508">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1209" height="223" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1593760770508" />
+    <state width="1209" height="223" key="GridCell.Tab.0.right" timestamp="1593760770509">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1209" height="223" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
+    <state width="200" height="477" key="HiddenNamespacesPopup" timestamp="1593575526420">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="200" height="477" key="HiddenNamespacesPopup/62.0.1474.864@62.0.1474.864" timestamp="1593575526420" />
+    <state x="604" y="153" key="NewPhpClassDialog" timestamp="1593758403404">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="604" y="153" key="NewPhpClassDialog/62.0.1474.864@62.0.1474.864" timestamp="1593758403404" />
+    <state x="632" y="355" key="NewPhpFileDialog" timestamp="1593797022103">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="632" y="355" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1593797022103" />
+  </component>
+</project>

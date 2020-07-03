@@ -55,7 +55,16 @@ class User extends Model
         return $find->fetch();
     }
 
-
+    /**foto do usuario
+     * @return string|null
+     */
+    public function photo(): ?string
+    {
+        if($this->photo && file_exists(__DIR__ ."/../../".CONF_UPLOAD_DIR."/images")){
+            return $this->photo;
+        }
+        return null;
+    }
     /**
      * @return null|User
      */

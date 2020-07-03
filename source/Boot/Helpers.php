@@ -84,6 +84,13 @@ function str_title(string $string): string
     return mb_convert_case(filter_var($string, FILTER_SANITIZE_SPECIAL_CHARS), MB_CASE_TITLE);
 }
 
+function str_textarea(string $text): string
+{
+    $text = filter_var($text, FILTER_SANITIZE_STRIPPED);
+    $arrayReplace = ["&#10;", "&#10;&#10;", "&#10;&#10;&#10;", "&#10;&#10;&#10;&#10;", "&#10;&#10;&#10;&#10;&#10;"];
+    return "<p>" . str_replace($arrayReplace, "</p><p>", $text) . "</p>";
+}
+
 /**
  * @param string $string
  * @param int $limit
@@ -119,6 +126,15 @@ function str_limit_chars(string $string, int $limit, string $pointer = "..."): s
 
     $chars = mb_substr($string, 0, mb_strrpos(mb_substr($string, 0, $limit), " "));
     return "{$chars}{$pointer}";
+}
+
+/**
+ * @param string $price
+ * @return string
+ */
+function str_price(string $price): string
+{
+    return number_format($price, 2, ",", ".");
 }
 
 /**
@@ -171,24 +187,41 @@ function redirect(string $url): void
 
 }
 
-/**
- * #################
- * ###   ASSET   ###
- * #################
- */
 
-function theme(string $path = null): string
+/**
+ * @return \Source\Models\User|null
+ */
+function user(): ?\Source\Models\User
+{
+    return \Source\Models\Auth::user();
+}
+
+
+function theme(string $path = null, string $theme = CONF_VIEW_THEME): string
 {
     if (strpos($_SERVER["HTTP_HOST"], "localhost")) {
         if ($path) {
-            return CONF_URL_TEST . "/themes/" . CONF_VIEW_THEME . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+            return CONF_URL_TEST . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
         }
-        return CONF_URL_TEST . "/themes/" . CONF_VIEW_THEME;
+        return CONF_URL_TEST . "/themes/{$theme}";
     }
     if ($path) {
-        return CONF_URL_BASE . "/themes/" . CONF_VIEW_THEME . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+        return CONF_URL_BASE . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
     }
-    return CONF_URL_BASE . "/themes/" . CONF_VIEW_THEME;
+    return CONF_URL_BASE . "/themes/{$theme}";
+}
+function themeapp(string $path = null, string $theme = CONF_VIEW_APP): string
+{
+    if (strpos($_SERVER["HTTP_HOST"], "localhost")) {
+        if ($path) {
+            return CONF_URL_TEST . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+        }
+        return CONF_URL_TEST . "/themes/{$theme}";
+    }
+    if ($path) {
+        return CONF_URL_BASE . "/themes/{$theme}/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+    }
+    return CONF_URL_BASE . "/themes/{$theme}";
 }
 
 function image(string $image, int $width, int $height = null): string
@@ -300,7 +333,7 @@ function csrf_verify($request): bool
 function flash(): ?string
 {
     $session = new \Source\Core\Session();
-    if($flash = $session->flash()){
+    if ($flash = $session->flash()) {
         echo $flash;
     }
     return null;
