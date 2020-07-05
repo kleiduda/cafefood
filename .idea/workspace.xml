@@ -20,31 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a2dc63b-b722-402a-bb37-e000e177ebc9" name="Default Changelist" comment="autenticao de usuario">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/scripts/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/boot.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/boot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/fonts/fsphp.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/shared/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/App.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Boot/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Boot/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Boot/Minify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Minify/Web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Support/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Support/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafe/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/_theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafe/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafe/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/cafe/auth-forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafe/auth-forget.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Models/CafeApp/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Models/CafeApp/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecustomer/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafecustomer/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/cafecustomer/views/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/cafecustomer/views/sidebar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +69,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/cafecustomer" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -124,7 +108,8 @@
       <workItem from="1593713529570" duration="9462000" />
       <workItem from="1593726566947" duration="29964000" />
       <workItem from="1593795648366" duration="3563000" />
-      <workItem from="1593814999474" duration="1260000" />
+      <workItem from="1593814999474" duration="4505000" />
+      <workItem from="1593903115310" duration="8382000" />
     </task>
     <task id="LOCAL-00001" summary="autenticao de usuario">
       <created>1593733083631</created>
@@ -156,10 +141,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="autenticao de usuario" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593575592375">
+    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593903961242">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1593575592375" />
+    <state x="392" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1593903961242" />
     <state x="550" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593568804003">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -184,22 +169,22 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="580" y="187" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1593641442572" />
-    <state width="1209" height="223" key="GridCell.Tab.0.bottom" timestamp="1593760770509">
+    <state width="1209" height="223" key="GridCell.Tab.0.bottom" timestamp="1593909488584">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1209" height="223" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
-    <state width="1209" height="223" key="GridCell.Tab.0.center" timestamp="1593760770509">
+    <state width="1209" height="223" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1593909488584" />
+    <state width="1209" height="223" key="GridCell.Tab.0.center" timestamp="1593909488584">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1209" height="223" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
-    <state width="1209" height="223" key="GridCell.Tab.0.left" timestamp="1593760770508">
+    <state width="1209" height="223" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1593909488584" />
+    <state width="1209" height="223" key="GridCell.Tab.0.left" timestamp="1593909488584">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1209" height="223" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1593760770508" />
-    <state width="1209" height="223" key="GridCell.Tab.0.right" timestamp="1593760770509">
+    <state width="1209" height="223" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1593909488584" />
+    <state width="1209" height="223" key="GridCell.Tab.0.right" timestamp="1593909488584">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1209" height="223" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1593760770509" />
+    <state width="1209" height="223" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1593909488584" />
     <state width="200" height="477" key="HiddenNamespacesPopup" timestamp="1593575526420">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -208,9 +193,13 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="604" y="153" key="NewPhpClassDialog/62.0.1474.864@62.0.1474.864" timestamp="1593758403404" />
-    <state x="632" y="355" key="NewPhpFileDialog" timestamp="1593797022103">
+    <state x="632" y="355" key="NewPhpFileDialog" timestamp="1593908885828">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="632" y="355" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1593797022103" />
+    <state x="632" y="355" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1593908885828" />
+    <state x="530" y="237" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1593909179408">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="530" y="237" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/62.0.1474.864@62.0.1474.864" timestamp="1593909179408" />
   </component>
 </project>

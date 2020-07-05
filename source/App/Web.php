@@ -96,8 +96,7 @@ class Web extends Controller
         echo $this->view->render("blog", [
             "head" => $head,
             "blog" => $blog->limit($pager->limit())->offset($pager->offset())->fetch(true),
-            "paginator" => $pager->render(),
-
+            "paginator" => $pager->render()
         ]);
     }
 

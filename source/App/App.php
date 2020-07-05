@@ -4,10 +4,12 @@ namespace Source\App;
 
 use Source\Core\Controller;
 use Source\Models\Auth;
+use Source\Models\CafeApp\Product;
 use Source\Models\Report\Access;
 use Source\Models\Report\Online;
 use Source\Models\User;
 use Source\Support\Message;
+use Source\Support\Pager;
 
 /**
  * Class App
@@ -52,54 +54,51 @@ class App extends Controller
         ]);
     }
 
-    /**
-     * APP INCOME (Receber)
-     */
-    public function income()
+/** Product */
+
+    public function product(?array $data)
     {
         $head = $this->seo->render(
-            "Minhas receitas - " . CONF_SITE_NAME,
+            "Produtos - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
-            url(),
+            url("/produtos"),
             theme("/assets/images/share.jpg"),
             false
         );
+        $product = (new Product())->find();
+        $pager = new Pager(url("/produtos/"));
+        $pager->pager($product->count(), 10, ($data['page'] ?? 1));
 
-        echo $this->view->render("income", [
-            "head" => $head
+
+        echo $this->view->render("product", [
+            "head" => $head,
+            "product"=>$product->limit($pager->limit())->offset($pager->offset())->fetch(true),
+            "paginator"=>$pager->render()
         ]);
     }
 
-    public function cardapio()
-    {
-        $head = $this->seo->render(
-            "Cardapio Online - " . CONF_SITE_NAME,
-            CONF_SITE_DESC,
-            url(),
-            theme("/assets/images/share.jpg"),
-            false
-        );
-
-        echo $this->view->render("cardapio", [
-            "head" => $head
-        ]);
-    }
-
-    public function users()
+    /** Users */
+    public function users(?array $data)
     {
         $head = $this->seo->render(
             "Lista de Usuarios - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
-            url(),
+            url("/usuarios"),
             theme("/assets/images/share.jpg"),
             false
         );
 
-        echo $this->view->render("users", [
-            "head" => $head
-        ]);
+        $user = (new User())->find();
+        $pager = new Pager(url("/usuarios/"));
+        $pager->pager($user->count(), 10, ($data['page'] ?? 1));
 
+        echo $this->view->render("users", [
+            "head" => $head,
+            "user"=>$user->limit($pager->limit())->offset($pager->offset())->fetch(true),
+            "paginator"=>$pager->render()
+        ]);
     }
+
     /**
      * APP EXPENSE (Pagar)
      */

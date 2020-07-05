@@ -53,8 +53,14 @@ $route->get("/receber", "App:income");
 $route->get("/pagar", "App:expense");
 $route->get("/fatura/{invoice_id}", "App:invoice");
 
-$route->get("/cardapio", "App:cardapio");
 $route->get("/usuarios","App:users");
+$route->get("/usuarios/{page}","App:users");
+$route->post("/buscar","App:users");
+$route->get("/usuarios/editar/{id}", "App:user-edit");
+
+/** produtos */
+$route->get("/produtos", "App:product");
+
 
 $route->get("/perfil", "App:profile");
 $route->get("/sair", "App:logout");

@@ -35,10 +35,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle">
+                        <a href="<?= url("app/produtos") ;?>">
                             <i class="fa fa-copy"></i>
                             <span>Produtos</span>
-                            <i class="fa fa-angle-right drop-icon"></i>
                         </a>
                     </li>
                     <li class="nav-header hidden-sm hidden-xs">
