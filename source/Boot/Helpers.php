@@ -161,6 +161,14 @@ function url(string $path = null): string
     return CONF_URL_BASE;
 }
 
+function current_url(): string
+{
+    return str_replace("/cafe/app/", "", $_SERVER["REQUEST_URI"]);
+}
+function previous_url():string
+{
+    return str_replace("https://www.localhost/cafe/app/", "", $_SERVER["HTTP_REFERER"]);
+}
 
 function url_back(): string
 {
@@ -210,6 +218,7 @@ function theme(string $path = null, string $theme = CONF_VIEW_THEME): string
     }
     return CONF_URL_BASE . "/themes/{$theme}";
 }
+
 function themeapp(string $path = null, string $theme = CONF_VIEW_APP): string
 {
     if (strpos($_SERVER["HTTP_HOST"], "localhost")) {

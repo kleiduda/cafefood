@@ -10,7 +10,7 @@ class Product extends Model
 {
     public function __construct()
     {
-        parent::__construct("app_products", ["id"], ["sku", "description", "regular_price", "sale_price"]);
+        parent::__construct("app_products p", ["id"], ["sku", "description", "regular_price", "sale_price"]);
     }
 
     public function bootstrap(
@@ -33,5 +33,23 @@ class Product extends Model
         $this->id_environmet = null;
         return $this;
     }
+    public function photo(): ?string
+    {
+        if($this->photo && file_exists(__DIR__ ."/../../".CONF_UPLOAD_DIR."/images")){
+            return $this->photo;
+        }
+        return null;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+

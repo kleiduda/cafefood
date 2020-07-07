@@ -36,6 +36,9 @@ class Post extends Model
     }
 
 
+    /**
+     * @return User|null
+     */
     public function author(): ?User
     {
         if($this->author){

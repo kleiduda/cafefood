@@ -19,6 +19,8 @@ class App extends Controller
 {
     /** @var User */
     private $user;
+    /** @var Product */
+    private $product;
 
     /**
      * App constructor.
@@ -62,10 +64,17 @@ class App extends Controller
             "Produtos - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
             url("/produtos"),
-            theme("/assets/images/share.jpg"),
-            false
+            theme("/assets/images/share.jpg")
         );
-        $product = (new Product())->find();
+        $product = (new Product())->findK(
+            null,
+            " app_product_category c ON p.id_category = c.id INNER JOIN app_environment ae ON p.id_environment = ae.id",
+            null,
+            "p.id, p.sku, p.ean, p.description, p.image, p.regular_price, p.sale_price, c.description as category, 
+            ae.description as environment"
+
+        );
+        //var_dump($product);
         $pager = new Pager(url("/produtos/"));
         $pager->pager($product->count(), 10, ($data['page'] ?? 1));
 
@@ -77,6 +86,47 @@ class App extends Controller
         ]);
     }
 
+    public function product_edit(?array $data)
+    {
+        if(!empty($data["update"])){
+            $json["data"] = $data;
+            echo json_encode($json);
+            return;
+        }
+        $product = (new Product())->findById($data['id']);
+        if(!$product){
+            redirect("/404");
+        }
+
+        $head = $this->seo->render(
+            "Edição Produto - " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url("/produtos/edit/{$product->id}"),
+            theme("/assets/images/share.jpg"),
+            false
+        );
+
+        echo $this->view->render("product-edit", [
+            "head"=>$head,
+            "product"=>$product,
+            "image"=>($product->photo() ? image($product->image, 400, 400) :
+                theme("/assets/img/default.jpg", CONF_VIEW_APP)),
+            "category"=>$product->category
+        ]);
+
+    }
+
+    public function product_remove(array $data)
+    {
+        $product = (new Product())->findById($data['id']);
+        if($product){
+            $product->delete("id", $product->id);
+        }
+        $this->message->success("Tudo ok, produto removido com sucesso")->flash();
+        $json['redirect'] = url_back();
+        echo json_encode($json);
+        var_dump($product);
+    }
     /** Users */
     public function users(?array $data)
     {
